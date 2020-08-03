@@ -1,0 +1,100 @@
+.menu-categories {
+  border-bottom: 1px solid $light-gray;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-top: 120px;
+  text-align: center;
+
+  .item {
+    padding: 20px;
+    position: relative;
+
+    .link.-active:after {
+      width: 100%;
+    }
+
+    &:nth-child(1) .link {
+      color: $green;
+
+      &:after {
+        background-color: $green;
+      }
+    }
+
+    &:nth-child(2) .link {
+      color: $salmon;
+
+      &:after {
+        background-color: $salmon;
+      }
+    }
+
+    &:nth-child(3) .link {
+      color: $light-blue;
+
+      &:after {
+        background-color: $light-blue;
+      }
+    }
+
+    &:nth-child(4) .link {
+      color: $golden;
+
+      &:after {
+        background-color: $golden;
+      }
+    }
+
+    &:nth-child(5) .link {
+      color: $brown;
+
+      &:after {
+        background-color: $brown;
+      }
+    }
+
+    &:nth-child(6) .link {
+      color: $purple;
+
+      &:after {
+        background-color: $purple;
+      }
+    }
+
+    .link {
+      align-items: center;
+      display: flex;
+      font-size: 13px;
+      font-weight: 700;
+      justify-content: center;
+      text-transform: uppercase;
+
+      &:hover:after {
+        width: 100%;
+      }
+
+      &:after {
+        bottom: 0;
+        content: '';
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 0;
+
+        @include transition(all, .5s);
+      }
+
+      .text {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .menu-categories {
+    overflow: hidden;
+  }
+}

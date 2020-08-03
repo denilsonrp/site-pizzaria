@@ -1,0 +1,53 @@
+* {
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $dark-gray;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  height: 100%;
+}
+
+h1 {
+  font-size: $font-size-base * 3;
+}
+
+h2 {
+  font-size: $font-size-base * 2;
+}
+
+h3 {
+  font-size: $font-size-base * 1.5;
+}
+
+p {
+  font-size: $font-size-base;
+  line-height: 30px;
+}
+
+a {
+  color: $dark-gray;
+  cursor: pointer;
+  text-decoration: none;
+
+  @include transition(all, .5s);
+
+  &:hover {
+    opacity: .75;
+  }
+}

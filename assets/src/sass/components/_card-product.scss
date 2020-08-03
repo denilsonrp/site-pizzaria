@@ -1,0 +1,55 @@
+.card-product {
+  padding: 15px;
+
+  .name {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .ingredient-title {
+    color: $gray;
+  }
+
+  .ingredients-tags {
+    margin: 20px 0 10px;
+
+    .ingredient {
+      border: 1px solid $light-gray;
+      display: inline-block;
+      font-size: 13px;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+
+      @include border-radius(20px);
+    }
+  }
+
+  .image {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  .box-sizes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+    .size {
+      align-items: center;
+      border: 1px solid $light-gray;
+      display: flex;
+      min-height: 40px;
+      min-width: 40px;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .price {
+      align-items: center;
+      display: flex;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
